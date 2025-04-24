@@ -13,7 +13,7 @@ It provides multiple log levels (Fatal, Error, Warn, Info, Debug, Trace) to help
 ## 📦 Installation
 
 ```bash
-make install
+make && make install
 ```
 **This command will:**
 - copy clog.h header into /usr/local/include directory
@@ -47,9 +47,12 @@ gcc main.c -lclog
 
 ```
 clog/
-├── clog.h         // Public header
-├── clog.c         // Implementation
-├── libclog.so     // Compiled shared library
-├── Makefile       // Optional build/install script
+├── inc/               # Public headers
+│   └── clog.h
+├── srcs/              # Source files
+│   ├── clog.c
+│   ├── logs.c
+│   └── setLogLevel.c
+├── Makefile           # Build and install system
 └── README.md
 ```
