@@ -42,17 +42,3 @@ int main()
 gcc main.c -lclog
 ```
 ![Capture d'écran 2025-04-19 133653](https://github.com/user-attachments/assets/0ec6a676-0325-4a49-9fd1-40411348c0f5)
-
-## 📁 Structure
-
-```
-clog/
-├── inc/               # Public headers
-│   └── clog.h
-├── srcs/              # Source files
-│   ├── clog.c
-│   ├── logs.c
-│   └── setLogLevel.c
-├── Makefile           # Build and install system
-└── README.md
-```
